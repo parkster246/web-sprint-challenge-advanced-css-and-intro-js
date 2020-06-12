@@ -241,7 +241,7 @@ function get20s(artists){
 let arr = []
 for(let counter = 0; counter < artists.length; counter++){
   if(artists[counter].years.includes(19)){
-    arr.push(artists[counter].years)
+    arr.push(artists[counter].names)
   }
 }
 return arr
@@ -261,7 +261,7 @@ console.log(get20s(artists))
 function removeArtist(arr, index) {
   arr.splice(index, 1)
   console.log(arr)
-    return arr
+    return arr.length
   
 }
 removeArtist(artists, 0)
@@ -308,7 +308,7 @@ function lotsOfArt(arr){
  let filteredArray = [];
   for(let i = 0; i < arr.length; i++){
     if(arr[i].paintings > 100){
-      filteredArray.push(artists[i].name)
+      filteredArray.push(arr[i].name)
    }
  }
 return filteredArray
