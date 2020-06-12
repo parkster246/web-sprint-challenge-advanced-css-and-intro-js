@@ -134,3 +134,38 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+
+@media(max-width:500px){
+    header{
+        display:flex;
+        justify-content:center;
+        
+    } 
+    
+    }
+    .title-container{
+        display:flex;
+        width:100%; 
+    }
+    .title-container div{
+        width:-webkit-fill-available;
+    }
+
+    
+    .artists-container{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        align-content:center;
+       font-size:x-small;
+    }
+    .artist{
+        min-width:31rem;
+
+    }
+    .artist img{
+        height:auto;
+    } 
+   }
